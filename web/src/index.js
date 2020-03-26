@@ -1,4 +1,5 @@
 
+import "@babel/polyfill"
 import './style/index.scss'
 import './js/image'
 import $ from "jquery";
@@ -19,12 +20,13 @@ const api_url = is_dev ? 'http://localhost:5001/guias-e20fc/us-central1/api/v1/'
 
 let grid_guides;
 
-const LIMIT = 1
+const LIMIT = 8
 let last_id = 0
 
 async function getGuides(from, limit) {
     const $btn_vermas = $('#btn_mas')
     const guides = await window.fetch(`${api_url}guias/?id=${guia_id}&from=${from}&limit=${limit}`)
+    console.log("guides",guides)
 
     // .then((response)=> {
     //     const data = response.json();
@@ -43,21 +45,23 @@ async function getGuides(from, limit) {
 
     let content_guides = $('#grid__guides');
     const res_length = response_data.length
-    for (var i=0 ; i < res_length; i++) { 
+    for (var i = 0; i < res_length; i++) {
 
-        console.log('response_data',res_length)
+        console.log('response_data', res_length)
         grid_guides = `
         <div class="molds_guides molds_guides-${response_data[i].size}">
+            <a href="${response_data[i].url}">
             <div class="molds_guides_relative">
                 <picture>
                     <source media="(min-width: 650px)"
-                        srcset="https://sodimac.scene7.com/is/image/SodimacPeru/dkp-2?wid=312&hei=350">
-                    <img src="https://sodimac.scene7.com/is/image/SodimacPeru/mb-2?wid=183&hei=251"
+                        srcset="https://www.sodimac.com.pe/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/images/${response_data[i].image_dkp}.jpg">
+                    <img src="https://www.sodimac.com.pe/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/images/${response_data[i].image_mb}.jpg"
                         alt="Aire libre  y jardín">
                 </picture>
                 <div class="molds_description">
 
                     <div class="molds_text">
+                        <h2>${response_data[i].label.title}</h2>
                         <p>
                         ${response_data[i].label.subtitle}
                         </p>
@@ -69,6 +73,7 @@ async function getGuides(from, limit) {
 
                 </div>
             </div>
+            </a>
         </div>
         `
         content_guides.append(grid_guides);
@@ -76,7 +81,6 @@ async function getGuides(from, limit) {
         if (i === res_length - 1) {
             last_id = response_data[i].id + 1
         }
-
     }
     $btn_vermas.data('from', last_id)
 }
@@ -91,6 +95,39 @@ $btn_mas.on('click', (e) => {
     console.log($this)
     const from = $this.data('from')
     getGuides(from, LIMIT)
+    $btn_mas.css('display','none')
 })
 
+
+// click para que el tab sea de color azul, y las lineas se elimen
+let $content__menu_sub = $(".content__menu_sub")
+$content__menu_sub.on('click', function () {
+    $content__menu_sub.removeClass('active-tab')
+    $content__menu_sub.removeClass('remove-line')
+    $(this).addClass('active-tab')
+    $(this).addClass('remove-line')
+    $(this).prev().addClass('remove-line')
+    console.log()
+})
+
+//  click para el menu se vuelve fixed cuando haces click
+let $content__menu  = $('.content__menu');
+let $navbar__toggle = $(".navbar-toggle")
+
+$content__menu.on('click', function () {
+    $content__menu.toggleClass('active-menu');
+    $navbar__toggle.toggleClass('collapsed')
+})
+
+
+// deslizamiento del mouse cuando el menu este en la parte superior
+let $header = $('#header')
+let $wincha = $('.wincha')
+$(window).scroll (function () {     
+    let $windowScroll= $(window).scrollTop()
+    console.log("adasdas",$(window).scrollTop())
+    $windowScroll > 200 ? $content__menu.addClass('active__menu__top'): $content__menu.removeClass('active__menu__top');
+    $windowScroll > 200 ? $header.css('display','none') : $header.css('display','block') 
+    $windowScroll > 200 ? $wincha .css('display','none') : $wincha .css('display','block') 
+})
 

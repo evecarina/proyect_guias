@@ -1,0 +1,95 @@
+ <!-- <div class="molds_guides molds_guides-50">
+                <div class="molds_guides_relative">
+                    <picture>
+                        <source media="(min-width: 650px)"
+                            srcset="https://sodimac.scene7.com/is/image/SodimacPeru/dkp-1?wid=636&hei=350">
+                        <img src="https://sodimac.scene7.com/is/image/SodimacPeru/mb-1?wid=375&hei=200"
+                            alt="Aire libre  y jardín">
+                    </picture>
+
+                    <div class="molds_description">
+
+                        <div class="molds_text">
+                            <p>¡Convierte tu terraza en un
+                                lugar soñado!</p>
+                        </div>
+
+                        <div class="molds_btn_read">
+                            <button> Leer más</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="molds_guides molds_guides-25">
+                <div class="molds_guides_relative">
+                    <picture>
+                        <source media="(min-width: 650px)"
+                            srcset="https://sodimac.scene7.com/is/image/SodimacPeru/dkp-2?wid=312&hei=350">
+                        <img src="https://sodimac.scene7.com/is/image/SodimacPeru/mb-2?wid=183&hei=251"
+                            alt="Aire libre  y jardín">
+                    </picture>
+                    <div class="molds_description">
+
+                        <div class="molds_text">
+                            <p>¡Convierte tu terraza en un
+                                lugar soñado!</p>
+                        </div>
+
+                        <div class="molds_btn_read">
+                            <button> Leer más</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="molds_guides molds_guides-25">
+                <div class="molds_guides_relative">
+                    <picture>
+                        <source media="(min-width: 650px)"
+                            srcset="https://sodimac.scene7.com/is/image/SodimacPeru/dkp-2?wid=312&hei=350">
+                        <img src="https://sodimac.scene7.com/is/image/SodimacPeru/mb-2?wid=183&hei=251"
+                            alt="Aire libre  y jardín">
+                    </picture>
+                    <div class="molds_description">
+
+                        <div class="molds_text">
+                            <p>¡Convierte tu terraza en un
+                                lugar soñado!</p>
+                        </div>
+
+                        <div class="molds_btn_read">
+                            <button> Leer más</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="molds_guides molds_guides-100">
+                <div class="molds_guides_relative">
+                    <picture>
+                        <source media="(min-width: 650px)"
+                            srcset="https://sodimac.scene7.com/is/image/SodimacPeru/dkp-4?wid=1281&hei=260">
+                        <img src="https://sodimac.scene7.com/is/image/SodimacPeru/mb-4?wid=375&hei=350"
+                            alt="Aire libre  y jardíns">
+                    </picture>
+                    <div class="molds_description">
+
+                        <div class="molds_text">
+                            <h2>Tips de pisos
+                                para tu terraza</h2>
+                            <p>El piso deck entrega un aspecto natural, armónico y moderno a cualquier patio o jardín.</p>
+                        </div>
+
+                        <div class="molds_btn_read">
+                            <button> Leer más</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->

@@ -1,0 +1,90 @@
+.menu__house {
+    background-image: url(../images/icon-house.png);
+}
+.content__menu_sub.active-tab .menu__house {
+    background-image: url(../images/icon-house-tab.png); 
+}
+
+.menu__umbrella {
+    background-image: url(../images/icon-umbrella.png);
+}
+
+.content__menu_sub.active-tab .menu__umbrella{
+    background-image: url(../images/icon-umbrella-tab.png); 
+}
+
+.menu__car {
+    background-image: url(../images/icon-car.png);  
+}
+
+.content__menu_sub.active-tab .menu__car {
+    background-image: url(../images/icon-car-tab.png); 
+}
+
+.menu__stove {
+    background-image: url(../images/icon-stove.png);  
+}
+.content__menu_sub.active-tab .menu__stove{
+    background-image: url(../images/icon-stove-tab.png); 
+}
+
+.menu__bath {
+    background-image: url(../images/icon-bath.png);  
+}
+
+.content__menu_sub.active-tab .menu__bath {
+    background-image: url(../images/icon-bath-tab.png); 
+}
+
+.menu__lamp {
+    background-image: url(../images/icon-lamp.png);  
+}
+.content__menu_sub.active-tab .menu__lamp {
+
+    background-image: url(../images/icon-lamp-tab.png); 
+}
+
+.menu__refri {
+    background-image: url(../images/icon-refri.png);  
+}
+
+.content__menu_sub.active-tab .menu__refri { 
+    background-image: url(../images/icon-refri-tab.png); 
+}
+
+.menu__furniture {
+    background-image: url(../images/icon-furniture.png);  
+}
+
+.content__menu_sub.active-tab .menu__furniture { 
+    background-image: url(../images/icon-furniture-tab.png); 
+}
+
+.menu__box {
+    background-image: url(../images/icon-box.png);  
+}
+
+.content__menu_sub.active-tab .menu__box { 
+    background-image: url(../images/icon-box-tab.png); 
+}
+
+.menu__drill {
+    background-image: url(../images/icon-drill.png);  
+}
+
+.content__menu_sub.active-tab .menu__drill { 
+    background-image: url(../images/icon-drill-tab.png); 
+}
+
+.icon__hamburger {  
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/icon-hamburger.png);  
+    background-size: cover;
+    margin-left: 15px;  
+    margin-top: -5px;
+}
+
+.active-menu .icon__hamburger {
+    background-image: url(../images/icon-close.png);  
+}
