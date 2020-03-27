@@ -54,8 +54,8 @@ async function getGuides(from, limit) {
             <div class="molds_guides_relative">
                 <picture>
                     <source media="(min-width: 650px)"
-                        srcset="https://www.sodimac.com.pe/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/images/${response_data[i].image_dkp}.jpg">
-                    <img src="https://www.sodimac.com.pe/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/images/${response_data[i].image_mb}.jpg"
+                        srcset="/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/images/${response_data[i].image_dkp}.jpg">
+                    <img src="/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/images/${response_data[i].image_mb}.jpg"
                         alt="Aire libre  y jardín">
                 </picture>
                 <div class="molds_description">
