@@ -1,5 +1,5 @@
 
-import "@babel/polyfill"
+
 import './style/index.scss'
 import './js/image'
 import $ from "jquery";
@@ -26,7 +26,7 @@ let last_id = 0
 async function getGuides(from, limit) {
     const $btn_vermas = $('#btn_mas')
     const guides = await window.fetch(`${api_url}guias/?id=${guia_id}&from=${from}&limit=${limit}`)
-    console.log("guides",guides)
+    console.log("guides1",guides)
 
     // .then((response)=> {
     //     const data = response.json();

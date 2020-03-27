@@ -26,7 +26,7 @@ module.exports = {
    output: {
       filename: '[name].[hash:20].js',
       path: buildPath,
-      publicPath: '/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/'
+      publicPath: 'https://www.sodimac.com.pe/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/'
    },
    node: {
       fs: 'empty'
@@ -89,6 +89,7 @@ module.exports = {
       ]
    },
    plugins: [
+     
 
       new HtmlWebpackPlugin({
          template: './src/pages/global.html',

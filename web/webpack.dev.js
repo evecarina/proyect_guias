@@ -75,6 +75,7 @@ module.exports = {
     },
     plugins: [
     
+      
 
         new HtmlWebpackPlugin({
             template: './src/pages/global.html',
