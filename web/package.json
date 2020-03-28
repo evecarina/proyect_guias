@@ -9,10 +9,14 @@
         "build": "webpack --config webpack.prod.js --mode production",
         "preview": "npm run build && http-server dist"
     },
+
+
+    
     "repository": {
         "type": "git",
         "url": ""
     },
+
     "keywords": [],
     "author": "eve",
     "license": "ISC",
@@ -54,4 +58,7 @@
         "webpack-dev-server": "^3.1.10",
         "webpack-encoding-plugin": "^0.3.1"
     }
+    
+  
+    
 }

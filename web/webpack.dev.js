@@ -5,8 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
     entry: {
-        piscinas: [ 'babel-polyfill', './src/index.js' ],
-        terrazas: [ 'babel-polyfill', './src/index.js' ]
+        piscinas: [ 'babel-polyfill', './src/index.js' ]     
     },     
     
     devServer: {
@@ -73,10 +72,9 @@ module.exports = {
             }
         ],
     },
+    
     plugins: [
     
-      
-
         new HtmlWebpackPlugin({
             template: './src/pages/global.html',
             // Inject the js bundle at the end of the body of the given template

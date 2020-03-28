@@ -30,6 +30,10 @@
 .bc-name {
     display: none !important;
 }
+
+#header {
+    min-height: 0 !important;
+}
 // end style of principal page 
 
 
@@ -50,6 +54,8 @@
     margin: auto;
     overflow: hidden;
     padding-bottom: 30px;
+    z-index: 1000;
+    position: relative;
 
     @media(min-width:$table) {
         max-width: 1300px;
@@ -597,6 +603,8 @@
 }
 
 .content__menu {
+    position: relative;
+    z-index: 1000;
     @media(max-width: $mobile) {
         position: relative;
     }
@@ -763,6 +771,7 @@
 // style menu active
 
 .content__menu.active-menu {
+
     @media (max-width: $mobile ) {
         overflow-y: scroll;
         max-width: 100%;
@@ -774,11 +783,12 @@
         position: fixed;
         right: 0;
         left: 0;
-        z-index: 1;
+        z-index: 10000;
         top: 0;
         margin-top: 0;
         transition: all cubic-bezier(0.6, -0.28, 0.74, 0.05) .6s;
     }
+
 }
 
 .active-menu .menu__tabs {
@@ -868,7 +878,7 @@
     margin-right: 19px;
     text-align: center;
     border-radius: 55%;
-    padding: 0px 8px;
+    padding: 0px 10px;
 }
  .navbar-default .navbar-toggle.collapsed .icon-bar {
     background-color: #fff;
@@ -886,7 +896,7 @@
     transform: rotate(45deg);
     -webkit-transform-origin: 5%;
     -ms-transform-origin: 5%;
-    transform-origin: 21%;
+    transform-origin: -1%;
 }
 .navbar-toggle.collapsed .icon-bar:nth-of-type(2) {
     opacity: 0;
@@ -898,7 +908,7 @@
     transform: rotate(-45deg);
     -webkit-transform-origin: 5%;
     -ms-transform-origin: 5%;
-    transform-origin: 14%;
+    transform-origin: 0%;
 }
 
 .navbar-toggle:focus { 

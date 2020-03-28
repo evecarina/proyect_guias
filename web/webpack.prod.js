@@ -26,7 +26,7 @@ module.exports = {
    output: {
       filename: '[name].[hash:20].js',
       path: buildPath,
-      publicPath: 'https://www.sodimac.com.pe/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/'
+      publicPath: '/static/categorias/contenidoEstatico/guiasdecomprasope/2020/home-guias/'
    },
    node: {
       fs: 'empty'

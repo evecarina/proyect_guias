@@ -1,5 +1,6 @@
 
 
+global._babelPolyfill = false;
 import './style/index.scss'
 import './js/image'
 import $ from "jquery";
@@ -88,31 +89,31 @@ async function getGuides(from, limit) {
 getGuides(1, LIMIT);
 
 let $btn_mas = $('#btn_mas');
-
 $btn_mas.on('click', (e) => {
     e.preventDefault()
     const $this = $btn_mas
     console.log($this)
     const from = $this.data('from')
     getGuides(from, LIMIT)
-    $btn_mas.css('display','none')
+    // $btn_mas.css('display','none')
 })
+
 
 
 // click para que el tab sea de color azul, y las lineas se elimen
 let $content__menu_sub = $(".content__menu_sub")
 $content__menu_sub.on('click', function () {
-    $content__menu_sub.removeClass('active-tab')
-    $content__menu_sub.removeClass('remove-line')
-    $(this).addClass('active-tab')
-    $(this).addClass('remove-line')
-    $(this).prev().addClass('remove-line')
-    console.log()
+    $content__menu_sub.removeClass('active-tab');
+    $content__menu_sub.removeClass('remove-line');
+    $(this).addClass('active-tab');
+    $(this).addClass('remove-line');
+    $(this).prev().addClass('remove-line');
+
 })
 
 //  click para el menu se vuelve fixed cuando haces click
 let $content__menu  = $('.content__menu');
-let $navbar__toggle = $(".navbar-toggle")
+let $navbar__toggle = $(".navbar-toggle");
 
 $content__menu.on('click', function () {
     $content__menu.toggleClass('active-menu');
@@ -121,13 +122,12 @@ $content__menu.on('click', function () {
 
 
 // deslizamiento del mouse cuando el menu este en la parte superior
-let $header = $('#header')
-let $wincha = $('.wincha')
+let $header = $('#header');
+let $wincha = $('.wincha');
 $(window).scroll (function () {     
-    let $windowScroll= $(window).scrollTop()
-    console.log("adasdas",$(window).scrollTop())
+    let $windowScroll= $(window).scrollTop();
+    console.log("adasdas",$(window).scrollTop());
     $windowScroll > 200 ? $content__menu.addClass('active__menu__top'): $content__menu.removeClass('active__menu__top');
-    $windowScroll > 200 ? $header.css('display','none') : $header.css('display','block') 
-    $windowScroll > 200 ? $wincha .css('display','none') : $wincha .css('display','block') 
+    $windowScroll > 200 ? $header.css('display','none') : $header.css('display','block');
+    $windowScroll > 200 ? $wincha .css('display','none') : $wincha.css('display','block') 
 })
-

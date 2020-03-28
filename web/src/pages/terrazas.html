@@ -1,5 +1,202 @@
-<script>var guia_id='guias';</script>
-<meta http-equiv="Content-Type" content="text/html">
-<h1 class="title">Proyecto</h1>
-<p>dasdadsas</p>
+<script>var guia_id = 'piscinas';</script>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section id="header" class="wincha"></section>
+    <section class="guide">
+
+        <div class="cover__header">
+
+            <picture>
+                <source media="(min-width: 650px)" srcset="<%=require('../images/baner_airelibre_dkp.jpg')%>">
+                <img src="<%=require('../images/banner_airelibre_mb.jpg')%>" alt="Aire libre  y jardín">
+            </picture>
+
+            <div class="cover__description__g">
+                <div class="cover__description">
+                    <div class="cover__img"><img src="<%=require('../images/icon-umbrella-tab.png')%>" alt=""></div>
+                    <div>
+                        <h1>Aire libre y jardín</h1>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class=" content__menu__scroll " >
+
+            <div class="content__menu ">
+
+                <div class="menu_title_mobile  hidden-destok">
+                    <h2 class="title_mobile_h2">MENÚ GUÍAS</h2>
+                    <!-- <div class="icon__hamburger "></div> -->
+                    <button class="navbar-toggle ">
+                        <!-- <span class="sr-only">CERRAR</span> -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="menu-scroll">
+                    <div class="menu__tabs">
+
+                        <div class="content__menu_sub ">
+                            <div class="menu_sub_line hidden-mobile"></div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__house "></div>
+                            </div>
+
+                            <div class="menu_title">
+                                <h2>Ver todo</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="content__menu_sub ">
+                            <div class="menu_sub_line hidden-mobile"></div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__umbrella "></div>
+                            </div>
+
+                            <div class="menu_title">
+                                <h2> Aire Libre <br />
+                                    y Jardín</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__car  "></div>
+                            </div>
+
+                            <div class="menu_title">
+                                <h2>Automóvil</h2>
+                            </div>
+
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class=" menu__icon menu__stove"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2> Cocina <br />
+                                    y lavandería</h2>
+                            </div>
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__bath"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2>Baño</h2>
+                            </div>
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__lamp"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2>Decoración <br />
+                                    e iluminación</h2>
+                            </div>
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__refri"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2>Electrohogar <br />
+                                    y climatización</h2>
+                            </div>
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__furniture"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2>Muebles <br />
+                                    y organización</h2>
+                            </div>
+                        </div>
+
+                        <div class="content__menu_sub">
+                            <div class="menu_sub_line hidden-mobile"> </div>
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__box"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2>Pisos <br />
+                                    y futones</h2>
+                            </div>
+                        </div>
+
+                        <div class="content__menu_sub">
+
+                            <div class="content__menu-table">
+                                <div class="menu__icon menu__drill"></div>
+
+                            </div>
+                            <div class="menu_title">
+                                <h2>Herramientas</h2>
+                            </div>
+                        </div>
+
+                        <!--asda  -->
+                    </div>
+                </div>
+
+                <!-- <span class="menu__line"></span> -->
+            </div>
+        </div>
+
+        <div class="content_title_tips top_20">
+            <h2>Los mejores consejos para aire libre y jardín</h2>
+        </div>
+
+        <div id="grid__guides" class="grid__guides top_20">
+
+
+        </div>
+
+        <div class="content_btn">
+
+            <button id="btn_mas" data-from="1"> ver más > </button>
+        </div>
+
+    </section>
+
+    <!-- <script src="https://www.sodimac.com.pe/static/contenido/2019/regalos/dist/js/jquery.min.js"></script> -->
+
+
+</body>
+
+
+</html>
