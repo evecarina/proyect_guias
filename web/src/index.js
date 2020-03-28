@@ -28,14 +28,6 @@ async function getGuides(from, limit) {
     const guides = await window.fetch(`${api_url}guias/?id=${guia_id}&from=${from}&limit=${limit}`)
     console.log("guides1",guides)
 
-    // .then((response)=> {
-    //     const data = response.json();
-    //     console.log('respuestaaaaaaa', data);
-
-    // }).catch((err) => {
-    //     console.log("err", err);
-    // });
-
     let response = await guides.json()
     let response_data = await response.data;
     console.log("Array", response_data)
@@ -112,18 +104,21 @@ $content__menu_sub.on('click', function () {
 //  click para el menu se vuelve fixed cuando haces click
 let $content__menu  = $('.content__menu');
 let $navbar__toggle = $(".navbar-toggle");
+let $header = $('#header');
 
 $content__menu.on('click', function () {
     $content__menu.toggleClass('active-menu');
     $navbar__toggle.toggleClass('collapsed')
+    $header.toggleClass("header-active")
 })
 
 
 // deslizamiento del mouse cuando el menu este en la parte superior
-let $header = $('#header');
+
+
 $(window).scroll (function () {     
     let $windowScroll= $(window).scrollTop();
-    // console.log("adasdas",$(window).scrollTop());
-    $windowScroll > 200 ? $header.css('display','none') : $header.css('display','block');
+    $windowScroll > 200 ? $header.addClass('header-active'):$header.removeClass('header-active');
     $windowScroll > 200 ? $content__menu.addClass('active__menu__top'): $content__menu.removeClass('active__menu__top');
+    // $windowScroll > 200 ?  $navbar__toggle.addClass('collapsed'):  $navbar__toggle.removeClass('collapsed');
 })

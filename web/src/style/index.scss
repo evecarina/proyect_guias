@@ -30,9 +30,11 @@
 .bc-name {
     display: none !important;
 }
-
 #header {
-    min-height: 0 !important;
+    display: block;
+}
+#header.header-active {
+    display: none ;
 }
 // end style of principal page 
 
@@ -50,10 +52,11 @@
 }
 
 .guide {
+    margin-top: -56px;
+    padding-bottom: 500px !important;
     font-family: "Lato";
     margin: auto;
     overflow: hidden;
-    padding-bottom: 29px;
     position: relative;
     
     @media(min-width:$table) {
@@ -145,10 +148,6 @@
     }
 
 }
-
-
-
-
 
 // sttyle title-tips
 .content_title_tips {
@@ -603,7 +602,7 @@
 
 .content__menu {
     position: relative;
-    z-index: 1000;
+    z-index: 1000 !important;
     @media(max-width: $mobile) {
         position: relative;
     }
@@ -612,6 +611,7 @@
 // .menu-scroll {
 //     overflow-y: scroll;
 // } 
+
 .menu__tabs {
     overflow: hidden;
     margin: auto;  
@@ -747,18 +747,13 @@
     width: 100%;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 10000;
    @media(min-width:$table) {
         background: #fff;
     }
 }
 
-// .content__menu.active__menu__top .menu__tabs {
-//     @media(min-width:$table) {
-      
-      
-//     }
-// }
+
 @media (min-width: $destok ) {
 .content__menu {
     padding: 15px 0px;
@@ -776,7 +771,7 @@
         max-width: 100%;
         height: 100%;
         background: #fff;
-        border-radius: 5px;
+        border-radius: 6px;
         overflow: hidden;
         /* margin: auto; */
         position: fixed;
