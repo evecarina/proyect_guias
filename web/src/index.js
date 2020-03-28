@@ -5,7 +5,6 @@ import './style/index.scss'
 import './js/image'
 import $ from "jquery";
 
-
 // import 'bootstrap' ; 
 
 require('babel-polyfill');
@@ -89,6 +88,7 @@ async function getGuides(from, limit) {
 getGuides(1, LIMIT);
 
 let $btn_mas = $('#btn_mas');
+
 $btn_mas.on('click', (e) => {
     e.preventDefault()
     const $this = $btn_mas
@@ -97,8 +97,6 @@ $btn_mas.on('click', (e) => {
     getGuides(from, LIMIT)
     // $btn_mas.css('display','none')
 })
-
-
 
 // click para que el tab sea de color azul, y las lineas se elimen
 let $content__menu_sub = $(".content__menu_sub")
@@ -123,11 +121,9 @@ $content__menu.on('click', function () {
 
 // deslizamiento del mouse cuando el menu este en la parte superior
 let $header = $('#header');
-let $wincha = $('.wincha');
 $(window).scroll (function () {     
     let $windowScroll= $(window).scrollTop();
-    console.log("adasdas",$(window).scrollTop());
-    $windowScroll > 200 ? $content__menu.addClass('active__menu__top'): $content__menu.removeClass('active__menu__top');
+    // console.log("adasdas",$(window).scrollTop());
     $windowScroll > 200 ? $header.css('display','none') : $header.css('display','block');
-    $windowScroll > 200 ? $wincha .css('display','none') : $wincha.css('display','block') 
+    $windowScroll > 200 ? $content__menu.addClass('active__menu__top'): $content__menu.removeClass('active__menu__top');
 })
