@@ -16,7 +16,9 @@ if (typeof window.fetch !== "function") {
 
 const is_dev = process.env.NODE_ENV === 'development'
 
-const api_url = is_dev ? 'http://localhost:5001/guias-e20fc/us-central1/api/v1/' : ''
+const api_url = is_dev
+    ? 'http://localhost:5001/guias-e20fc/us-central1/api/v1/'
+    : 'https://us-central1-guias-e20fc.cloudfunctions.net/api/v1/'
 
 let grid_guides;
 
