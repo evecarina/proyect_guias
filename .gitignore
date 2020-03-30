@@ -1,2 +1,9 @@
 web/node_modules
+web/build
+web/.env
+
 api/node_modules
+api/guias-e20fc-firebase-adminsdk-5qpnf-7464e3b130.json
+
+*.xd
+
