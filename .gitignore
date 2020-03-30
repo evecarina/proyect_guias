@@ -1,0 +1,11 @@
+web/node_modules
+web/build
+web/.env
+
+api/functions/node_modules
+api/guias-e20fc-firebase-adminsdk-5qpnf-7464e3b130.json
+
+example
+
+*.xd
+
