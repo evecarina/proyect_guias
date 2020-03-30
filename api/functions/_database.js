@@ -1,7 +1,7 @@
 
 // para hacer la conexion con un servicio cloud firebase
 const admin = require("firebase-admin");
-const serviceAccount = require("../guias-e20fc-firebase-adminsdk-5qpnf-7464e3b130.json");
+const serviceAccount = require("./guias-e20fc-firebase-adminsdk-5qpnf-7464e3b130.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
